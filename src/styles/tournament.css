@@ -300,6 +300,14 @@
     margin-top: 2190px;
 }
 
+.seventh.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.seventh.tournament-match-group .tournament-match:last-child{
+    margin-bottom: 0;
+}
+
 /* ------ */
 
 .first-double.tournament-match-group:first-child{
@@ -333,7 +341,7 @@
 }
 
 .third-double.tournament-match-group{
-    margin-bottom: 162px;
+    margin-bottom: 161px;
 }
 
 .fourth-double.tournament-match-group{
@@ -351,9 +359,12 @@
     margin-bottom: 230px;
 }
 
+.fifth-double-group.tournament-match-group:first-child{
+    margin-top: 218px;
+}
+
 .fifth-double-group.tournament-match-group{
-    margin-bottom: 450px;
-    margin-top: 223px;
+    margin-bottom: 445px;
 }
 
 .fifth-double-group.tournament-match-group:last-child{
@@ -361,12 +372,12 @@
 }
 
 .sixth-double-group.tournament-match-group:first-child{
-    margin-top: 254px;
+    margin-top: 250px;
     margin-bottom: 510px;
 }
 
 .sixth-double-group.tournament-match-group-items .tournament-match:nth-child(1){
-    margin-bottom: 515px;
+    margin-bottom: 510px;
 }
 
 .sixth-double-group.tournament-match-group:last-child{
@@ -374,8 +385,7 @@
 }
 
 
-.fifth-double.tournament-match-group{
-    margin-bottom: 450px;
+.fifth-double.tournament-match-group:first-child{
     margin-top: 113px;
 }
 
@@ -397,8 +407,8 @@
 }
 
 .seventh-double.tournament-match-group:first-child{
-    margin-top: 1034px;
-    margin-bottom: 1015px;
+    margin-top: 1031px;
+    margin-bottom: 1009px;
 }
 .seventh-double.tournament-match-group{
     margin-top: 165px;
@@ -413,7 +423,7 @@
 }
 
 .eighth-double.tournament-match-group-items .tournament-match:nth-child(1){
-    margin-bottom: 1080px;
+    margin-bottom: 1074px;
 }
 
 .ninth-double-group.tournament-match-group:first-child{
@@ -430,5 +440,5 @@
 }
 
 .eleventh-double.tournament-match-group{
-    margin-top: 3285px;
+    margin-top: 3314px;
 }
