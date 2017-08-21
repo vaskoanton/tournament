@@ -114,12 +114,7 @@ class TournamentTree {
         })[0];
 
         let result = [singleElLastMatchWinner, doubleElLastMatchWinner];
-
-        result = result.map((p) => {
-            return JSON.parse(JSON.stringify(p));
-        });
-
-        return [this.tournamentMatch.updateMatchWinners(result)];
+        return [this.tournamentMatch.updateMatchWinners(result.copy)];
     }
 
     getSingleEliminationTournamentLosers(match) {
