@@ -1,0 +1,22 @@
+body, html, #root {
+  font-family: sans-serif;
+  word-wrap: break-word;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #303030;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+* html .wrapper {
+  height: 100%;
+}
+
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}

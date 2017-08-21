@@ -1,0 +1,22 @@
+.tournament-footer{
+    background-color: black;
+    color: white;
+    padding-left: 110px;
+    padding-right: 100px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+
+.tournament-footer-label{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.tournament-footer-push{
+    height: 50px;
+}

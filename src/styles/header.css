@@ -1,0 +1,33 @@
+.tournament-header{
+    background-color: black;
+    color:white;
+    padding-left: 110px;
+    padding-right: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.tournament-label{
+    font-size: 22px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.tournament-header-controls{
+    margin-top: 15px;
+}
+
+.tournament-header-controls a{
+    text-decoration: none;
+    color: #7b7b7b;
+    font-size: 18px;
+    border: 1px solid #7b7b7b;
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+
+.tournament-header-controls a:hover{
+    color:#dadada;
+    border: 1px solid #dadada;;
+}
