@@ -1,0 +1,434 @@
+.tournament-grid{
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow-x: auto;
+}
+
+.tournament-tour{
+    display: table-cell;
+    height: 100vh;
+    min-width: 340px;
+}
+
+.tournament-type{
+    position: relative;
+    float:left;
+}
+
+.tournament-tour:nth-child(odd)
+{
+    background-color: #2C2C2C;
+}
+
+.tournament-tour-name{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #9a9a9a;
+    padding: 40px;
+}
+
+.tournament-matches{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.tournament-match{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 7px;
+}
+
+.tournament-match:first-child{
+    margin-bottom: 10px;
+}
+
+.floated-tournament-matches{
+    padding: 10px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.tournament-match-id{
+    color:#757575;
+    float: left;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.tournament-participants{
+    float: right;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.tournament-participants-group{
+    width: 100%;
+}
+
+.tournament-participant{
+    background-color: #474747;
+    display: flex;
+    height: 25px;
+    min-width: 200px;
+}
+
+.tournament-participant:hover{
+    background-color: #424242;
+}
+
+.winner.tournament-participant{
+    background-color: #656565;
+}
+
+.tournament-participant:first-child{
+    margin-bottom: 5px;
+}
+
+.tournament-participant-label{
+    background-color: #757575;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    width: 40px;
+    height: 100%;
+}
+
+.tournament-participant-label span{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    line-height: 25px;
+}
+
+.tournament-participant-name{
+    padding: 5px;
+    margin-left: 5px;
+    color: #9a9a9a;
+    font-size: 14px;
+    width:100%;
+}
+
+.single-elimination-group{
+    float:left;
+    width: 100%;
+}
+
+.double-elimination-group{
+    margin-top: 200px;
+    float:right;
+    width: 100%;
+}
+
+.tournament-double-elimination-group{
+    display: flex;
+}
+
+/* --------------------- */
+
+.tournament-match-group{
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 15px;
+}
+
+
+.tournament-match-group-items{
+    width: 300px;
+    display: table-cell;
+}
+
+.tournament-single-relation{
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 5px;
+    float: left;
+    background-color: grey;
+    height: 2px;
+    width: 80px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.tournament-final-relation{
+    width: 21px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    margin-right: 10px;
+}
+
+.tournament-final-relation:after{
+    content: '';
+    position: relative;
+    top: 50%;
+    left: 20px;
+    float: left;
+    background-color: grey;
+    height: 2px;
+    width: 10px;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+.tournament-group-relation{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tournament-participant-relation{
+    width: 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    position: absolute;
+    top: 26px;
+    /*right: 5px;*/
+    height: calc(100% - 53px);
+}
+
+.tournament-participant-relation-line{
+    position: relative;
+    top: 50%;
+    left: 20px;
+    float: left;
+    background-color: grey;
+    height: 2px;
+    width: 100%;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+
+.second.tournament-match-group{
+    margin-top: 32px;
+    margin-bottom: 90px;
+}
+
+.second.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 80px;
+}
+
+.second.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+
+.third.tournament-match-group{
+    margin-top: 100px;
+    margin-bottom: 230px;
+}
+
+.third.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.third.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 220px;
+}
+
+
+.fourth.tournament-match-group{
+    margin-top: 233px;
+    margin-bottom: 510px;
+}
+
+.fourth.tournament-match-group:last-child{
+    margin-bottom: 249px;
+}
+
+.fourth.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 502px;
+}
+
+.fourth.tournament-match-group-items .tournament-match:last-child{
+    margin-bottom: 0;
+}
+
+
+
+.fifth.tournament-match-group{
+    margin-top: 512px;
+    margin-bottom: 1070px;
+}
+
+.fifth.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.fifth.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 1063px;
+}
+
+.fifth.tournament-match-group-items .tournament-match:last-child{
+    margin-bottom: 0;
+}
+
+
+.sixth.tournament-match-group{
+    margin-top: 1070px;
+    margin-bottom: 540px;
+}
+
+.sixth.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.sixth.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 2186px;
+}
+
+.sixth.tournament-match-group-items .tournament-match:last-child{
+    margin-bottom: 0;
+}
+
+.seventh.tournament-match-group{
+    margin-top: 2190px;
+}
+
+/* ------ */
+
+.first-double.tournament-match-group:first-child{
+    margin-top: 55px;
+}
+
+
+.second-double.tournament-match-group:first-child{
+    margin-top: 87px;
+}
+
+.second-double.tournament-match-group{
+    margin-top: 75px;
+    margin-bottom: 88px;
+}
+
+.second-double.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.second-double.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 82px;
+}
+
+.third-double.tournament-match-group:first-child{
+    margin-top: 191px;
+}
+
+.third-double.tournament-match-group:last-child{
+    margin-bottom:0;
+}
+
+.third-double.tournament-match-group{
+    margin-bottom: 162px;
+}
+
+.fourth-double.tournament-match-group{
+    margin-bottom: 225px;
+}
+
+.fourth-double.tournament-match-group:first-child{
+    margin-top: 220px;
+}
+
+.fourth-double.tournament-match-group:last-child{
+    margin-bottom: 225px;
+}
+.fourth-double.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 230px;
+}
+
+.fifth-double-group.tournament-match-group{
+    margin-bottom: 450px;
+    margin-top: 223px;
+}
+
+.fifth-double-group.tournament-match-group:last-child{
+    margin-bottom: 265px;
+}
+
+.sixth-double-group.tournament-match-group:first-child{
+    margin-top: 254px;
+    margin-bottom: 510px;
+}
+
+.sixth-double-group.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 515px;
+}
+
+.sixth-double-group.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+
+.fifth-double.tournament-match-group{
+    margin-bottom: 450px;
+    margin-top: 113px;
+}
+
+.fifth-double.tournament-match-group:last-child{
+    margin-bottom: 265px;
+}
+
+.sixth-double.tournament-match-group:first-child{
+    margin-top: 144px;
+    margin-bottom: 510px;
+}
+
+.sixth-double.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 515px;
+}
+
+.sixth-double.tournament-match-group:last-child{
+    margin-bottom: 0;
+}
+
+.seventh-double.tournament-match-group:first-child{
+    margin-top: 1034px;
+    margin-bottom: 1015px;
+}
+.seventh-double.tournament-match-group{
+    margin-top: 165px;
+}
+
+.seventh-double-group.tournament-match-group:first-child {
+    margin-top: 775px;
+}
+
+.eighth-double.tournament-match-group:first-child{
+    margin-top: 1064px;
+}
+
+.eighth-double.tournament-match-group-items .tournament-match:nth-child(1){
+    margin-bottom: 1080px;
+}
+
+.ninth-double-group.tournament-match-group:first-child{
+    margin-top: 1622px;
+}
+
+.ninth-double.tournament-match-group:first-child{
+    margin-top: 2161px;
+}
+
+.tenth-double.tournament-match-group:first-child{
+    margin-top: 2195px;
+    padding-right: 5px;
+}
+
+.eleventh-double.tournament-match-group{
+    margin-top: 3285px;
+}
